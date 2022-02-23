@@ -1,0 +1,500 @@
+.body {
+    text-align: center
+}
+
+.h  {
+    text-align:left ;
+    width: 20%;
+}
+ul li {
+      
+    display: inline-block;
+    padding: 5px 100px 10px 2px;
+ 
+
+  }
+
+  .sp ul li {
+    
+    display: inline-block;
+    padding: 1px 0.5% 1px 1px;
+
+  
+  }
+
+  .sp ul li p {
+      font-size: 200%;
+  }
+.pc ul li a {
+  font-size: 1vw;
+}
+.sp ul li a {
+  font-size: 1vw;
+}
+
+    /*PCとスマホ版の切り替えるPG*/
+
+/* パソコンで見たときは"pc"のclassがついた画像が表示される */
+.pc { display: block !important; }
+.sp { display: none !important; }
+ 
+/* スマートフォンで見たときは"sp"のclassがついた画像が表示される */
+@media only screen and (max-width: 1200px) {
+    .pc { display: none !important; }
+    .sp { display: block !important; }
+}
+/*ここまで*/
+header {
+
+    text-align: center;
+    background-color: rgb(44, 44, 44);
+    background-size: 100%;
+    
+}
+.menu a:hover {
+    color: white;
+    
+}  
+
+.menu a {
+  color: rgb(255, 196, 0);
+  text-decoration:none; 
+}
+
+
+<!--ディゾルブでの商品紹介写真欄-->
+
+.slider_fade {
+    position: relative;
+    
+}
+
+.slider_fade img {
+    width: 100%;
+    margin: auto;
+    display:block;
+}
+.slider_fade > li {
+    position: absolute;
+    list-style: none;
+    visibility: hidden;
+    animation: anime_slider_fade 12s 0s infinite;
+}
+.slider_fade > li:nth-of-type(2) {
+    animation-delay: 4s;
+}
+.slider_fade > li:nth-of-type(3) {
+    animation-delay: 8s;
+}
+ 
+@keyframes anime_slider_fade {
+    0% {
+        visibility: visible;
+        opacity: 0;
+    }
+    15% {
+        opacity: 1;
+    }
+    33.3% {
+        opacity: 1;
+    }
+    48.3% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+.osirase img {
+    text-align: left;
+    width: 30%;
+}
+
+
+
+
+  .pc .slider_fade img {
+    width: 100%;
+    margin:0 auto;
+    display:block;
+}
+
+.sp .slider_fade img {
+    width: 100%;
+    margin:0 auto;
+    display:block;
+}
+
+ .sin {
+     padding: 0%;
+ }
+ 
+
+  ul {
+    display: flex;
+    justify-content: center;
+    
+  }
+
+  .sin a img {
+      width: 95%;
+      margin: 10px;
+  }
+
+
+  .te {
+      text-align: center;  }
+
+.kaigyou img {
+    width: 50%;
+}
+
+.box1 {
+   text-align: center;
+    border: 5px solid rgb(255, 208, 0); 
+ width: 20%;
+ height: 15%;
+ margin: 1px;
+ padding: 0%
+
+}
+.box1 img {
+    width: 100%;
+}
+ul {
+     padding: 0%
+}
+
+
+.kaigyou0 img {
+    width: 5%;
+}
+
+
+.sp img {
+    width: 100%;
+}
+
+
+.sp .kaigyou img {
+    width: 70%;
+}
+
+
+.sp .osirase img {
+    text-align: left;
+    width: 50%;
+}
+
+
+.koumoku {
+    text-align: center;
+    font-size: 150%;
+}
+
+
+.pc img {
+    margin: 0px 200px;           /* 上下 左右 */
+    width: 30%;
+    padding-left: auto;
+    height: 30%;
+}
+.pc .mei p {
+
+    font-size: 30px;
+}
+
+ .syouhin {
+    display: flex;
+    
+    
+  }
+
+/* .pc .syouhin .mei p {
+      font-size: 300%;
+  } */
+  .kakaku {
+      font-size: 10px;
+      color: red;
+      padding-right: 5%;
+  }
+
+.box2 {
+    text-align: center;
+    border: 5px solid rgb(255, 208, 0); 
+ width: 80%;
+ height: 100%;
+ margin: 1px;
+ padding: 0%
+
+}
+.box2 p .bunsyou {
+    margin: 0%;
+    font-size: 20px;
+   
+}
+
+.sp img {
+    width: 80%;
+    text-align: center;
+    margin: 0%;
+}
+.sp {
+    text-align: center;
+}
+.spmei p {
+    text-align: left;
+    font-size: 30px;
+    padding-left: 10%;
+}
+
+.kakakusp {
+    font-size: 30px;
+    text-align: left;
+    padding-left: 10%;
+    color: red;
+}
+
+.btnrui {
+    text-align: center;
+    margin: auto;
+   
+}
+.spbox2 {
+    text-align: center;
+    border: 5px solid rgb(255, 208, 0); 
+ width: 100%;
+ height: 50%;
+
+margin: auto;
+
+}
+
+/*スマホ*/
+
+.spbtn{
+    width:100%;
+    height:20%;
+    line-height:40px;
+}
+.spbtn a{
+    display:block;
+    width:100%;
+    height:100%;
+    text-decoration: none;
+    background:#FFC200;
+    text-align:center;
+    border:1px solid #FFFFFF;
+    color:#383838;
+    font-size:20px;
+    font-weight:bold;
+    border-radius:16px;
+    -webkit-border-radius:16px;
+    -moz-border-radius:16px;
+    box-shadow:0px 0px 0px 4px #393939 ;
+    transition: all 0.5s ease;
+}
+.spbtn a:hover{
+    background:#FFFFFF;
+    color:#393939;
+    margin-left:0px;
+    margin-top:0px;
+    border:1px solid #FFFFFF;
+    box-shadow:0px 0px 0px 4px #393939 ;
+}
+
+.spmerubtn{
+    width:100%;
+    height:20%;
+    line-height:40px;
+}
+.spmerubtn a{
+    display:block;
+    width:100%;
+    height:100%;
+    text-decoration: none;
+    background:#FFFFFF;
+    text-align:center;
+    border:1px solid #FFFFFF;
+    color:#383838;
+    font-size:20px;
+    font-weight:bold;
+    border-radius:16px;
+    -webkit-border-radius:16px;
+    -moz-border-radius:16px;
+    box-shadow:0px 0px 0px 4px #FF0000 ;
+    transition: all 0.5s ease;
+}
+.spmerubtn a:hover{
+    background:#FF0000;
+    color:#FFFFFF;
+    margin-left:0px;
+    margin-top:0px;
+    border:1px solid #FFFFFF;
+    box-shadow:0px 0px 0px 4px #FF0000 ;
+}
+.spbtnsetumei{
+    width:100%;
+    height:20%;
+    line-height:40px;
+}
+.spbtnsetumei a{
+    display:block;
+    width:100%;
+    height:100%;
+    text-decoration: none;
+    background:#FFFFFF;
+    text-align:center;
+    border:1px solid #FFFFFF;
+    color:#383838;
+    font-size:20px;
+    font-weight:bold;
+    border-radius:16px;
+    -webkit-border-radius:16px;
+    -moz-border-radius:16px;
+    box-shadow:0px 0px 0px 4px #393939 ;
+    transition: all 0.5s ease;
+}
+.spbtnsetumei a:hover{
+    background:#393939;
+    color:#FFFFFF;
+    margin-left:0px;
+    margin-top:0px;
+    border:1px solid #FFFFFF;
+    box-shadow:0px 0px 0px 4px #393939 ;
+}
+
+/*ここまで*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*ぱそこん*/
+
+  .btn{
+    width:600px;
+    height:40px;
+    line-height:40px;
+}
+.btn a{
+    display:block;
+    width:100%;
+    height:100%;
+    text-decoration: none;
+    background:#FFC200;
+    text-align:center;
+    border:1px solid #FFFFFF;
+    color:#383838;
+    font-size:20px;
+    font-weight:bold;
+    border-radius:16px;
+    -webkit-border-radius:16px;
+    -moz-border-radius:16px;
+    box-shadow:0px 0px 0px 4px #393939 ;
+    transition: all 0.5s ease;
+}
+.btn a:hover{
+    background:#FFFFFF;
+    color:#393939;
+    margin-left:0px;
+    margin-top:0px;
+    border:1px solid #FFFFFF;
+    box-shadow:0px 0px 0px 4px #393939 ;
+}
+
+.merubtn{
+    width:600px;
+    height:40px;
+    line-height:40px;
+}
+.merubtn a{
+    display:block;
+    width:100%;
+    height:100%;
+    text-decoration: none;
+    background:#FFFFFF;
+    text-align:center;
+    border:1px solid #FFFFFF;
+    color:#383838;
+    font-size:20px;
+    font-weight:bold;
+    border-radius:16px;
+    -webkit-border-radius:16px;
+    -moz-border-radius:16px;
+    box-shadow:0px 0px 0px 4px #FF0000 ;
+    transition: all 0.5s ease;
+}
+.merubtn a:hover{
+    background:#FF0000;
+    color:#FFFFFF;
+    margin-left:0px;
+    margin-top:0px;
+    border:1px solid #FFFFFF;
+    box-shadow:0px 0px 0px 4px #FF0000 ;
+}
+.btnsetumei{
+    width:600px;
+    height:40px;
+    line-height:40px;
+}
+.btnsetumei a{
+    display:block;
+    width:100%;
+    height:100%;
+    text-decoration: none;
+    background:#FFFFFF;
+    text-align:center;
+    border:1px solid #FFFFFF;
+    color:#383838;
+    font-size:20px;
+    font-weight:bold;
+    border-radius:16px;
+    -webkit-border-radius:16px;
+    -moz-border-radius:16px;
+    box-shadow:0px 0px 0px 4px #393939 ;
+    transition: all 0.5s ease;
+}
+.btnsetumei a:hover{
+    background:#393939;
+    color:#FFFFFF;
+    margin-left:0px;
+    margin-top:0px;
+    border:1px solid #FFFFFF;
+    box-shadow:0px 0px 0px 4px #393939 ;
+}
+/*ここまで*/
